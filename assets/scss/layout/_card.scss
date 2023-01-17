@@ -1,0 +1,29 @@
+.main-wrapper{
+    background-color: $body-bg;
+    background-image: url("../../../assets/images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.components{
+    background-color:  hsl(228, 56%, 26%);
+    border-radius: 8px;
+    border-top-right-radius: 80px;
+    width:300px
+}
+.storage-info{
+    background-color:  hsl(228, 56%, 26%);
+}  
+.icon-wrpper div{
+    background-color: hsl(229, 57%, 11%);
+    height: 45px;
+    width: 45px;
+    margin-right: 10px;
+    border-radius: 8px;
+    @include flex-center;
+  
+}
+.slider{
+    width: 100%;
+}
