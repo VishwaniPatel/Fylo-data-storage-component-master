@@ -53,14 +53,42 @@ body {
   margin-right: 40px;
 }
 
-.border-radius-4 {
-  border-radius: 4px;
+.border-radius-8 {
+  border-radius: 8px;
 }
 
 .flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.me-4 {
+  margin-right: 4px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
 }
 
 .main-wrapper {
@@ -73,13 +101,38 @@ body {
 
 .components {
   background-color: hsl(228deg, 56%, 26%);
-  border-radius: 8px;
   border-top-right-radius: 80px;
   width: 300px;
 }
 
 .storage-info {
   background-color: hsl(228deg, 56%, 26%);
+  width: 500px;
+  position: relative;
+}
+.storage-info p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.storage-info .dialog-box {
+  height: 55px;
+  width: 130px;
+  background-color: #fff;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  color: #000;
+}
+.storage-info .dialog-box::after {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  right: 0px;
 }
 
 .icon-wrpper div {
@@ -93,8 +146,49 @@ body {
   justify-content: center;
 }
 
-.slider {
+.slider-container {
   width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 2px solid hsl(229deg, 57%, 11%);
+  height: 16px;
+  background-color: hsl(229deg, 57%, 11%);
+  outline: none;
+  opacity: 0.7;
+  border-radius: 25px;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  overflow: hidden;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: -407px 0 0 400px hsl(6deg, 100%, 80%);
+}
+
+.slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 80%;
+  background: transparent;
+  width: 80%;
+}
+
+.slider::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
+}
+
+.slider::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

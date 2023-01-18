@@ -27,7 +27,7 @@
   </head>
   <body>
     <div class="main-wrapper flex-center h-100">
-      <div class="components p-40 me-40">
+      <div class="components p-40 me-40 border-radius-8">
         <div class="d-flex flex-column">
           <div class="img-wrapper mb-30">
             <img src="assets/images/logo.svg" alt="Logo" />
@@ -45,10 +45,21 @@
           </div>
         </div>
       </div>
-      <div class="storage-info p-40 text-white">
-        <p>You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB</p>
-        <div class="slider">
-          <input type="range" min="1" max="100" value="80" />
+      <div class="storage-info p-40 text-white border-radius-8 mb-10">
+        <div class="mb-12">
+          <p>You’ve used <strong>815 GB</strong> of your storage</p>
+        </div>
+        <div class="dialog-box border-radius-8 flex-center">
+          <span class="font-weight-600 fs-30 me-4">185</span>
+          <span class="fs-10">GB LEFT</span>
+        </div>
+
+        <div class="slider-container mb-8">
+          <input class="slider" type="range" min="1" max="100" value="80" />
+        </div>
+        <div class="d-flex justify-content-between fs-10">
+          <div>0 GB</div>
+          <div>1000 GB</div>
         </div>
       </div>
     </div>

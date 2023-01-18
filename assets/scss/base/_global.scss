@@ -46,9 +46,30 @@ body {
 .me-40{
     margin-right:40px;
 }
-.border-radius-4{
-    border-radius: 4px
+.border-radius-8{
+    border-radius: 8px
 }
 .flex-center{
     @include flex-center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.font-weight-600{
+    font-weight: 600;
+}
+.fs-10{
+    font-size: 10px;
+}
+.fs-30{
+    font-size: 30px;
+}
+.me-4{
+    margin-right: 4px;
+}
+.mb-12{
+    margin-bottom: 12px;
+}
+.mb-8{
+    margin-bottom: 8px;
 }
