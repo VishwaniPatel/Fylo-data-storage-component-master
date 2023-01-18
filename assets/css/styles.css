@@ -97,12 +97,16 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .components {
   background-color: hsl(228deg, 56%, 26%);
   border-top-right-radius: 80px;
   width: 300px;
+  margin: 20px;
 }
 
 .storage-info {
@@ -189,6 +193,21 @@ body {
 .slider::-ms-fill-upper {
   background: #ddd;
   border-radius: 10px;
+}
+
+@media (max-width: 556px) {
+  .main-wrapper {
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+  }
+  .storage-info .dialog-box {
+    top: 75%;
+    right: 40%;
+  }
+  .storage-info .dialog-box::after {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
